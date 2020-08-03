@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel=stylesheet type=text/css href= "myFiles/CSS/queries.css">
+        <link rel="stylesheet" type="text/css" href="myFiles/CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="outsideSources/CSS/normalize.css">
+        <link rel="stylesheet" type="text/css" href="outsideSources/CSS/2015-03-25_13-52-05__grid.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>WebMaster</title>
+        
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <ul class="nav">
+                        <div class="column7">
+                            <li><a href="#"> Home</a></li>
+                        </div>
+                        <div class="column7">
+                            <li><a href="#">Getting Started</a></li>
+                        </div>
+                        <div class="column7">
+                            <li><a href="#">Resources</a></li>
+                        </div>  
+                        <div class="column7">
+                            <li><a href="#">HTML Basics</a></li>
+                        </div>   
+                        <div class="column7">
+                            <li><a href="#">Key Design Guidelines</a></li>
+                        </div> 
+                        <div class="column7">
+                            <li><a href="#">CSS Basics</a></li>  
+                        </div>    
+                        <div class="column7">
+                            <li><a href="#">Finishing Up</a></li>    
+                        </div>
+                    </ul>         
+                </div>
+            </nav>
+            <div class="row">
+                <div class="webmaster">
+                    <h1>Webmaster</h1>
+                </div>
+            </div>
+            <div class="row4">
+                <div class="centertext">
+                    <h1>Step by step guide to build a website</h1>
+                </div>
+            </div>
+            <div class="row">
+                <a class="centerbtn" href="#">Get Started</a>
+            </div>
+        </header>
+        
+        <section class="gettingStarted">
+            <div class="row"> 
+                <h2>Getting Started &mdash; Setting up the IDE</h2>
+                    <div class="row">
+                        <div class="column">
+                            <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                            <h3>Download Brackets</h3>
+                                <p>
+                                    This is a popular IDE (integrated development environment) for HTML, CSS, and JavaScript that I use. It would be easiest to follow
+                                    my instructions using this, but you can choose to use a different IDE. Download it using the button below
+                                </p>
+                        <a class="bracketsbtn" href="http://brackets.io/" target="_blank">Brackets</a>
+                        </div>
+                        <div class="column">
+                        <ion-icon name="folder-outline" size="large"></ion-icon>
+                            <h3>Setting Up Folders</h3>
+                                <p>
+                                    Create a folder system similar to the one shown below. I will refer to these folders when telling you where to place files. 
+                                </p>
+                        </div>
+                        <div class="column">
+                                <ion-icon name="document-outline" size="large"></ion-icon>
+                            <h3>Creating Files</h3>
+                                <p>
+                                    First, open Brackets on computer. Then, click <strong>File->New</strong> twice to open up two files. After, click <strong>File->Save As...</strong> on each file to save the files. Save one of them as (htmlFileName).html and the other as (cssFileName).css. Place the
+                                    HTML file in (Website Name) and place the CSS file in (Website Name)/myFiles/css
+                                </p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="resources">
+            <div class="row">
+                <h2>Resources</h2>
+                <div class="column">
+                    <ion-icon name="document-text-outline" size="large"></ion-icon>
+                    <h3>Fonts</h3>
+                        <p>
+                            Google provides many fonts that can be used on your website. When filling out fonts, select your desired styles and click on the "Embed" section, which will give you instructions on how to use the font.
+                        </p>
+                    <a href="https://fonts.google.com/" target="_blank" class="btn">Google Fonts</a>
+                </div>
+                <div class="column">
+                    <ion-icon name="color-wand-outline" size="large"></ion-icon>
+                    <h3>Icons</h3>
+                        <p>
+                            Ionicons provides hundreds of icons that can be easily searched for on their website. To learn more about Ionicons, visit their website. I will show you how to use it in the HTML basics section.
+                        </p>
+                <a href="https://ionicons.com/" target="_blank" class="btn">Ionicons</a>
+                </div>
+                <div class="column">
+                   <ion-icon name="image-outline" size="large"></ion-icon> 
+                    <h3>Images</h3>
+                        <p>
+                            Unsplash provides thousands of images for your use. Simply search for a picture, click on it, download it, and place it in FOLDER LOCATION. 
+                        </p>
+                    <a href="https://unsplash.com/" target="_blank" class="btn">Unsplash</a>
+                </div>
+                <div class="column">
+                    <ion-icon name="document-text-outline" size="large"></ion-icon>
+                    <h3>Normalize</h3>
+                        <p>
+                            Download normalize.css and place it in the FOLDER LOCATION. This adjusts some CSS styles for you, which will be helpful later.
+                        </p>
+                    <a href="https://necolas.github.io/normalize.css/" target="_blank" class="btn">Normalize.css</a>
+                </div>
+            </div>
+            
+        </section>
+        
+
+        
+        <section class="htmlBasics">
+                <div class="row2">
+                    <h2>HTML Basics</h2>
+                    <div class="column">
+                        <h3>Head</h3>
+                        <img class="head" src="myFiles/images/HTML/Head.png" alt="HTML head element">
+                    </div>
+                    <div class="column">
+                       <p>
+                        - DOCTYPE tag initializes html document <br>
+                        - html tag encloses html document <br>
+                        - head tag encloses head of html document <br>
+                        - The head contains CSS styles and files that you want your html document to be linked to. <br>
+                        - The link tag is used to link other files, which can be connected by supplying rel, href, and possibly type attributes <br>
+                        - In this example, CSS styles, normalize.css, the fluid grid, and google fonts are linked, in that order. <br>
+                        - Lastly, the head contains the title of the website.
+                           
+                        </p>
+                    </div>
+                 </div>
+                <div class="row">
+                    <div class="column">
+                        <h3>Body</h3>
+                        <img class="body" src="myFiles/images/HTML/Body.png" alt="HTML body element">
+                    </div>
+                    <div class="column">
+                        <p>
+                            - The body tag encloses the body element <br>
+                            - The body contains the elements that people generally associate with webpages <br>
+                            - These elements are either on the home page (header) or later pages (section) <br>
+                            - Sections can be given class names which can be referred to when styling the section <br>
+                            - I use div class="row" and div class="column" to break my website into rows and columns for easy formatting. You can place any HTML elements that you could place in the header in these rows, columns, or elsewhere in the section to build webpages after your main home page (the header).  <br>
+                            - The line after the closing body tag allows you to easily use ionicons by copy pasting the code given on the ionicons website that resembles the form (ion-icon name="name of icon").
+                        </p>
+                    </div>
+            </div>
+                <div class="row2">
+                    <div class="column">
+                        <h3>Elements in the Body</h3>
+                        <img src="myFiles/images/HTML/HeadingsToContainers.png" alt="HTML elements">
+                    </div>
+                    <div class="column">
+                        <p> 
+                            - Heading elements can be created using h# tags, where # represents a number between 1 and 6 <br>
+                            - h1 is generally a main heading, and h6 is generally the sub-most heading <br>
+                            - Paragraphs can be created using an opening and closing p tag. <br>
+                            - Links and buttons that function as links can be created with an a tag and href attribute, where the href attribute contains the link name<br>
+                            - You can also add a target attribute with value "_blank" to make the link open in a new tab <br>
+                            - You can also use a class attribute with the a tag or any other tag to assign an element to a class <br>
+                            - Images are made with an img tag and src attribute, where the src attribute contains the file name <br>
+                            - You can also use an alt attribute to give an alternative description in case the photo cannot be displayed <br>
+                            - You can create a container using the div tag that is referenced through the class name in the class attribute <br>
+                            - These will be used in a similar way to header, section, or class names since it a container holds a group of HTML elements that are similar in some way </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h3>Navigation for Header</h3>
+                        <img src="myFiles/images/HTML/Navigation.png" alt="Navigation">
+                    </div>
+                    <div class="column">
+                        <p>
+                            - A navigation can be created using nav tags <br>
+                            - We use div class="row" because that creates a row to place elements inside <br>
+                            - Inside the row, we placed an unordered list that has list items that are links <br>
+                            - # is simply a placeholder, you should put the link name in the href attribute <br>
+                            <br>
+                            Important Note: Using container div with class="row" can create a row. Then, you can use container div again with class="column" to create columns within your row to, for example, split a row of your webpage into 3 columns. 
+                        </p>
+                    </div>
+                </div>
+                
+               
+        </section>
+        
+        <section class="designGuidelines">
+            <div class="row">
+                    <h2>Key Design Guidelines</h2>
+                    <div class="column">
+                        <h3>Typography (Fonts)</h3>
+                            <p>
+                                Choose fonts that are very neutral and plain, without little fancy extensions coming out of the letters, such as san-serif fonts. Some examples are Open Sans, Lato, Raleway, Monsterrat, and PT Sans. Use very big fonts with decreased font weights for headings and small fonts with increased line height for paragraphs.
+                            </p>
+                    </div>
+                    <div class="column">
+                        <h3>Color</h3>
+                            <p>
+                                Pick one/two main color(s) to use in a way similar to how I used red/pink on this site, otherwise use mostly black and white. It prevents the website from looking like the website on the left. Use color to draw attention to important elements of the website.
+                            </p>
+                            
+                    </div>
+                    <div class="column">
+                        <h3>Whitespace</h3>
+                        <p>
+                            Use margins and padding to space out the HTML elements (paragraphs and headings and things), because you do not want your website to be crammed like the website on the right.
+                        </p>
+                        
+                    </div>
+                    <div class="column">
+                        <h3></h3>
+                        <p>
+ 
+                        </p>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="column2">
+                    <img class="colored" src="myFiles/images/Design/TooManyColors.png" alt="Too colorful website">
+                </div>
+                 <div class="column2">
+                    <img class="crammed" src="myFiles/images/Design/Crammed.png" alt="Too crammed website">
+                </div>
+                
+            </div>
+            
+        
+        </section>
+        
+        <section class="cssBasics">
+            <div class="row">
+                <h2>CSS Basics</h2>
+                <div class="column">
+                    <h3>Box Model</h3>
+                    <p>
+                        In CSS you will style the HTML elements you have already created, and the box model is important for understanding how to style elements.
+                        In the center of an HTML element is the content (like text, for example). Then, there is padding between the content and the element's border. Finally, there is a margin consisting of whitespace surrounding the border. The size of these parts can adjusted to your liking for each element.
+                    </p>
+                     <img class="boxModel" src="myFiles/images/CSS/BoxModel.png" alt="Box Model">
+                </div>
+                <div class="column">
+                    <h3>Structure of CSS Rule</h3>
+                    <p>
+                        In CSS, a grouping of code is often referred to as a rule. A rule consists of a selector and properties. The selector can be a type of HTML element, a container, or a class. The defining factor of a selector is that it allows the user to reference 1 or more HTML element so that the element(s) can be styled. The properties in a rule are statements that affect the display of the HTML element(s) referenced by the selector. 
+                    </p>
+                    <img class="cssRule" src="myFiles/images/CSS/Rule.png" alt="CSS Rule">
+                    
+                </div>
+                <div class="column">
+                    <h3>Formatting Sections, Rows, and Columns</h3>
+                    <p>
+                        These are some examples of how I format the sections, rows, and columns I create in HTML. Note that the elements within these rows and columns can now be given widths and heights to occupy 0%-100% of the space provided by your HTML structure, as shown on the bottom.
+                    </p>
+                    <img src="myFiles/images/CSS/cssFormatting.png" alt="Sections, Rows, Columns Formatting">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h3>Selectors</h3>
+                    <p>
+                        Below are types of selectors you can use. Of course, I cannot be specific and list every example, so I speak generally in my comments on the code below. If you would like to see more selectors, click the link to the HTML documentation.
+                    </p>
+                    <img src="myFiles/images/CSS/Selector.png" alt="exampleSelectors">
+                    <br>
+                    <a href="https://devdocs.io/css-selectors/" target="_blank" class="btn">Selectors</a>
+                </div>
+                <div class="column">
+                    <h3>Declarations</h3>
+                    <p>
+                        Below are example declarations. I listed many common ones, but if you would like to see more, visit the link to the CSS documentation. 
+                    </p>
+                    <img src="myFiles/images/CSS/Properties.png" alt="exampleProperties">
+                    <br>
+                    <a href="https://devdocs.io/css/" target="_blank" class="btn">Keywords</a>
+                </div>
+                <div class="column">
+                    <h3>Inspect-Observing Other Websites</h3>
+                    <p>
+                        On Google Chrome, you can right-click on any element on any website and click Inspect. After doing this, an interface will pop up with heading "Elements" in one navigation bar and heading "Styles" in another. Study the code under "Elements" for the HTML behind the website and "Styles" for the CSS. You'll notice that as you hover code, certain elements highlight on the webpage, meaning you are viewing the code that created the element. You can get ideas from any website, even mine. This is important for inspiration, as there is no need to figure out how to create the most beautiful website when so many other people have already attempted to and you can learn from them.
+                    </p>
+                    
+                </div>
+            </div>
+        
+        
+            
+        <section class="finishingUp">
+            <div class="row">
+                <h2>Finishing Up</h2>
+                <div class="column">
+                    <h3>Search Engine Optimization</h3>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="column">
+                    <h3>Website Speed</h3>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="column">
+                    <h3>Launching Your Website</h3>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="column">
+                    <h3>Website Maintenance</h3>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row3">
+                <div class="column1">
+                    <img src="myFiles/images/author/pictureOfMe.jpg" alt="Christian Lizardi picture" class="me">
+                </div>
+                <div class="column2">
+                        <p>
+                            Christian Lizardi <br>
+                            <a href="https://www.engineering.cornell.edu/" target="_blank">Cornell University</a>
+                            College of Engineering '23 <br>
+                            B.S. in Computer Science, Operations Research and Information Engineering <br>
+                            Email: cal352@cornell.edu
+                        </p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+
+
+
+</html>
+    

@@ -1,0 +1,108 @@
+* {
+    /* Properties apply to everything */
+    /* By the way these are CSS comments */
+}
+
+#containerName {
+    /* Properties apply to container */
+}
+
+#containerName * {
+    /* Properties apply to every 
+    element in the container */
+}
+.className {
+    /* Properties apply to elements in
+    the class */
+}
+
+htmlElement {
+    /* Properties apply to htmlElement
+    (such as p, header, h2) */
+}
+
+htmlElement1 htmlElement2 {
+    /* Properties apply to htmlElement2
+    which is within htmlElement1 */
+}
+
+a:link,
+a:visited,
+a:hover {
+    /* Properties apply to link that has
+    not been clicked yet, has been clicked, 
+    and is being hovered over (these can
+    be used individually*/
+}
+
+
+* {
+    /* Height and width in pixels (px)
+    Almost anything represented in pixels 
+    can also be given a percentage, as
+    I show with the height part. */
+    width: 100px;
+    height: 90%;
+    /* order: top, right, bottom, left*/
+    margin: 5px 10px 5px 10px; 
+    padding: 2% 8% 5% 3%; 
+    /* Text color. Note: Click on a color
+    and press Command-E or Ctrl-E to see an 
+    interface that lets you adjust the color.
+    You can also select colors using hexadecimal
+    or rgba, both of which I show below. */
+    color: white;
+    background-color: #0101aa;
+    border: 1px solid #bbccee;
+    /*This makes the border more circular */
+    border-radius: 200px;
+    /*Border color, uses RGBA color scheme */
+    border-color: rgba(200, 100, 50, 0.8);
+    /*Creates background image.
+    url() is where you place the image file 
+    and linear-gradient is used to place a color
+    gradient over the image, defined by the rgba 
+    colors shown.*/
+    background-image: url(fileName);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    /*ONLY AVAILABLE WHEN USING position: absolute;
+    which can be helpful for building a responsive
+    website because the positions are relative*/
+    top: 10%;
+    bottom: 50px;
+    left: 100px;
+    right: 20%;
+}
+
+
+
+
+.row {
+    max-width: 1140px;
+    margin:  5% 10%;
+    padding: 5% 10%;
+}
+
+.bottomSection .row {
+    margin: 0 2%;
+    float: left;
+}
+
+.section1 {
+    height: 100vh;
+    padding: 10% 0%;
+    margin: 10% 0%;
+    background-color: #222;
+}
+
+.section1 .column3 {
+    width: 33.33%;
+    float: left;
+}
+
+
+
